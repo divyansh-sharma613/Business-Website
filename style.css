@@ -1,0 +1,47 @@
+:root{
+  --accent:#1f5eff;
+  --hero-bg:linear-gradient(120deg,#0b1f4d,#1f5eff);
+  --img-bg:linear-gradient(135deg,#e3ecff,#c5d6ff);
+  --ink:#1d1d24;
+  --page:#f8f9fc;
+  --border:#e2e6f0;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:1rem/1.6 Manrope,system-ui,sans-serif;color:var(--ink);background:var(--page)}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:14px 5%;background:var(--ink);color:#fff}
+.top nav{display:flex;gap:20px;flex-wrap:wrap}
+.top a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.85}
+.top a:hover{opacity:1}
+
+.hero{padding:110px 5%;background:var(--hero-bg);color:#fff}
+.hero h1{font-size:clamp(2.2rem,5vw,3.8rem);max-width:17ch}
+.hero p{max-width:52ch;margin:16px 0 28px;opacity:.92}
+
+.btn{display:inline-block;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:12px 26px;font:700 1rem Manrope,sans-serif;cursor:pointer;text-decoration:none}
+.hero .btn{background:#fff;color:var(--accent)}
+
+section{padding:64px 5%}
+h2{font-size:2rem;margin-bottom:24px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;text-align:center;background:#fff;border-bottom:1px solid var(--border)}
+.stats b{display:block;font:600 2.6rem Fraunces,serif;color:var(--accent)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.item{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.img{height:150px;display:grid;place-items:center;font-size:3.6rem;background:var(--img-bg)}
+.img img{width:100%;height:100%;object-fit:cover}
+.body{padding:20px}
+.body h3{font-size:1.15rem;margin-bottom:6px}
+.body p{color:#66707f;font-size:.92rem}
+
+form{display:grid;gap:14px;max-width:520px}
+input,textarea{padding:12px;border:1px solid #d3d9e6;border-radius:10px;font:inherit;width:100%}
+#msg{color:var(--accent);font-weight:700;min-height:1.5em}
+
+footer{padding:28px 5%;background:var(--ink);color:#aaa;text-align:center;font-size:.9rem}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northline Consulting</title>
+<meta name="description" content="Northline Consulting helps growing companies plan, market and scale.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <b>🏢 Northline Consulting</b>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Grow your business with clear strategy.</h1>
+  <p>We help growing companies plan, market and scale with confidence.</p>
+  <a class="btn" href="#contact">Get a free consultation</a>
+</section>
+
+<!-- Numbers: script.js inhe 0 se ginti karke dikhata hai -->
+<section class="stats">
+  <div><b data-count="250" data-suffix="+">0</b>Clients served</div>
+  <div><b data-count="12">0</b>Years of experience</div>
+  <div><b data-count="98" data-suffix="%">0</b>Client satisfaction</div>
+  <div><b data-count="15">0</b>Countries</div>
+</section>
+
+<section id="services">
+  <h2>Our services</h2>
+  <div class="cards">
+    <div class="item"><div class="img">📈</div><div class="body"><h3>Business strategy</h3><p>Clear plans with goals you can measure.</p></div></div>
+    <div class="item"><div class="img">📣</div><div class="body"><h3>Digital marketing</h3><p>SEO, ads and social media that bring leads.</p></div></div>
+    <div class="item"><div class="img">💼</div><div class="body"><h3>Operations</h3><p>Simpler processes and lower costs.</p></div></div>
+  </div>
+</section>
+
+<section id="clients">
+  <h2>What clients say</h2>
+  <div class="cards">
+    <div class="item"><div class="body"><h3>"Our revenue grew 40% in six months."</h3><p>Anita Verma, Founder, Verma Textiles</p></div></div>
+    <div class="item"><div class="body"><h3>"Clear advice and zero jargon."</h3><p>Rohan Mehta, Director, Mehta Logistics</p></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Send an enquiry</h2>
+  <form id="enquiryForm" novalidate>
+    <input id="name" placeholder="Your name">
+    <input id="email" type="email" placeholder="Email">
+    <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+    <button class="btn" type="submit">Send enquiry</button>
+    <p id="msg" role="status"></p>
+  </form>
+</section>
+
+<footer>Demo project by Divyansh Sharma</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
